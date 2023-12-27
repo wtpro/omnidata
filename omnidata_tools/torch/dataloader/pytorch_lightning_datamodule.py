@@ -3,7 +3,7 @@ from .component_datasets import *
 from fastcore.basics import store_attr, ifnone
 from pytorch_lightning import seed_everything
 from pytorch_lightning import LightningDataModule, LightningModule, Trainer
-from pytorch_lightning.trainer.supporters import CombinedLoader
+from pytorch_lightning.utilities import CombinedLoader
 from torch.utils.data import DataLoader, ConcatDataset
 from torch.utils.data.sampler import BatchSampler, RandomSampler, SequentialSampler, WeightedRandomSampler
 from typing import Optional, Dict
